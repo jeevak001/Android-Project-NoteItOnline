@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.noteitapp.dev.noteit.EditCategoryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category Name"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="0dp"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:id="@+id/edit_category_name_button"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:capitalize="sentences"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/grey_border"
+                android:hint="Name of Category"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Display Check"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="0dp"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="25dp"
+                    android:id="@+id/edit_category_color_view_button"
+                    android:layout_gravity="center"
+                    android:layout_height="25dp"
+                    android:background="#C67C67"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_category_text_button"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#9e9e9e"
+                    android:text="Category"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="0dp"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:paddingRight="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    android:textAllCaps="false"
+                    android:id="@+id/edit_category_color_pick_button"
+                    android:textColor="#FFF"
+                    android:layout_gravity="center"
+                    android:background="@drawable/blue_button_selector"
+                    android:text="Color Pick"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:id="@+id/edit_category_color_select_button"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/blue_button_selector"
+                    android:text="Color Select"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/edit_category_save_button"
+                android:textColor="#FFF"
+                android:layout_weight="1"
+                android:layout_margin="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/green_button_selector"
+                android:text="Edit Category"/>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Note It</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_category">CreateCategoryActivity</string>
+    <string name="title_activity_delete_category">DeleteCategoryActivity</string>
+    <string name="title_activity_add_note">AddNoteActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="title_activity_edit_category">EditCategoryActivity</string>
+    <string name="title_activity_alarm_note">AlarmNote</string>
+    <string name="title_activity_alarm_show">AlarmShowActivity</string>
+    <string name="title_activity_alarm_notes">AlarmNotesActivity</string>
+    <string name="title_activity_online_update">OnlineUpdateActivity</string>
+    <string name="title_activity_get_online">GetOnlineActivity</string>
+</resources>
